@@ -1,0 +1,648 @@
+/************************ CSS Reset *******************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+ol, ul, dt, dl {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+fieldset,img {
+    border: none;
+}
+legend {
+    display: none;
+}
+input[type=text], textarea {
+    padding: 2px;
+}
+a, a:link a:active a:visited {
+    color: #000000;
+    text-decoration: none;	
+}
+a:hover {
+    text-decoration: none;
+
+}
+caption,cite,code,dfn,em,th,var {
+    font-style: normal;
+    font-weight: normal;
+}
+input, textarea, select{
+    outline: none;
+    border-radius: 3px;
+}
+
+input:focus{
+    border-color: #66afe9;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+textarea:focus{
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+select:focus{
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+
+textarea{
+    resize:none; /*não deixa redimensionar o textarea no chrome*/
+}
+/* Font face */
+
+@font-face {
+    font-family: helveticaneue;
+    src: url(?HelveticaNeueLTStd-UltLt.otf?);
+}
+root { 
+    display: block;
+}
+html, body { margin:0; height: 100%;}
+
+body{
+    margin-top: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+.login-page{
+    background-image: url('../images/fundo_login.JPG');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+#form_login{
+    width: 40%;
+    height: 260px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form_login_top{
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #053f6a;
+}
+
+#form_login_top_esq{
+    float: left;
+    width: 38%;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
+#form_login_top_dir{
+    float: right;
+    width: 58%;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 2%;
+}
+
+#form_login_inputs{
+    padding: 20px;
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.title_login_bold{
+    font-weight: 900;
+    color: #053f6a;
+    font-style: normal;
+}
+
+.title_login_light{
+    font-weight: 100;
+    color: #3b99df;
+    font-style: normal;
+}
+
+.bnt_menu{
+    float: left;
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 18pt;
+    color: #ffffff;
+}
+
+.bnt_menu a{
+    color:  #ffffff;
+}
+
+.bnt_menu:hover{
+    color:  #ffffff;
+}
+
+.bnt_menu:visited{
+    color:  #ffffff;
+}
+
+.bnt_menu:link{
+    color:  #ffffff;
+}
+
+hr{
+    color: #053f6a;
+}
+
+#main{
+    float: left;
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 95%;
+    height: auto;
+}
+
+.primeiro_acesso a{
+    float: left;
+    color: #3b99df;
+    margin-left: 20px;
+}
+
+.esqueceu_senha a{
+    float: right;
+    color: #053f6a;
+    margin-right: 20px;
+}
+
+.primeiro_acesso a:hover{
+    color: #3b99df;
+}
+
+.esqueceu_senha a:hover{
+    color: #053f6a;
+}
+
+.primeiro_acesso a:visited{
+    color: #3b99df;
+}
+
+.esqueceu_senha a:visited{
+    color: #053f6a;
+}
+
+#dashboards{
+    margin-top: 3%;
+}
+
+.dashboards_box{
+    float: left;
+    width: 250px;
+    height: 145px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 48pt;
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 2px;
+}
+
+.dashboards_amarelo{
+    background-color: #f39c12;
+    border-bottom: 20px solid #da8c10;
+}
+
+.dashboards_vermelho{
+    background-color: #dd4b39;
+    border-bottom: 20px solid #c74333;
+}
+
+.dashboards_title{
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+.formularios{
+    margin-top: 30px;
+}
+
+.faixas{
+    width: 100%;
+}
+
+.faixas_body{
+    background-color: #e9e7e7;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.faixas_title{
+    float: left;
+    width: 100%;
+    background-color: #ccc;
+    font-size: 12pt;
+    padding: 3px;
+}
+
+.btn-inline{
+    margin-left:10px;
+}
+
+.table-faixas{
+    margin-top: 50px;
+}
+
+.table_title{
+    color: #ffffff;
+    background-color: #054575;
+}
+
+.icons-red{
+    color: #c74333;
+}
+
+.icons-green{
+    color: #008d4c;
+}
+
+.msg_alertas{
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    float: left;
+    position: absolute;
+}
+
+.msg_errors2{
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    float: left;
+}
+
+#primeiro_acesso_perfis_body{
+    float: left;
+    width: 100%;
+}
+
+.primeiro_acesso_perfis{
+    width: 80%;
+    height: 80px;
+    background-color: #053f6a;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 80px;
+    font-size: 13pt;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_destaque{
+    font-weight: 900;
+}
+
+.link_bco{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link_bco:hover{
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.link_bco:visited{
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.link_bco:link{
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.text_explicativo{
+    float: left;
+    width: 95%;
+    margin-top: 50px;
+    font-size: 14pt;
+    color: #555;
+    margin-left: 2%;
+    display: block;
+    text-align: justify;
+}
+
+.text_numeral{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    float: left;
+    border-radius: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#form_novo_usuario{
+    float: left;
+    margin-left: 2.5%;
+    width: 95%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.painel_novo_user{
+    width: 60%;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    float: left;
+    margin-left: 20%;
+}
+
+.painel_primeiro_acesso{
+    width: 60%;
+    height:auto;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    float: left;
+    margin-left: 20%;
+}
+
+.text_faixa_horarios{
+    margin-top: 10%;
+    font-size: 18pt;
+}
+
+#incluir_faixas{
+    display: none;
+}
+
+#loading{
+    text-align: center;
+    padding-top: 10%;
+    position: fixed; 
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(255,255,255,0.8);
+    font-size: 18pt;
+    color: #054575;
+    display: none;
+}
+
+#loading_modal{
+    text-align: center;
+}
+
+#cad_bloco_error{
+    display: none;
+}
+
+#cad_bloco_success{
+    display: none;
+}
+
+#form_esquceu_senha{
+    float: left;
+    margin-left: 2.5%;
+    width: 95%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.btn_voltar{
+    float: left;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#equipamento_portaria{
+    display: none;
+}
+
+#input_telefone_memoria{
+    display: none;
+}
+
+.font_red{
+    color: #c74333;
+}
+
+.font_green{
+    color: #0a8c27;
+}
+
+#qtde_digitos_apartamento{
+    display: none;
+}
+
+#btn_primeiro_acesso{
+    float: left;
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%;
+    border: 3px solid;
+}
+
+#btn_primeiro_acesso_img{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#btn_primeiro_acesso_text{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#error_primeiro_acesso{
+    width: 100%;
+    float: left;
+}
+
+#apartamentos_btn_delete_selecionados{
+    display: none;
+}
+
+#desmarcar_todos_apartamentos{
+    display: none;
+}
+
+#div_btn_selecionar_todos{
+    float: left;
+}
+
+#div_apartamentos_btn_delete_selecionados{
+    float: left;
+    margin-left: 2%;
+}
+
+#btns_top_table{
+    width: 100%;
+    float: left;
+    background-color: #dadada;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#saudacao{
+    width: 100%;
+    text-align: center;
+    font-size: 18pt;
+    margin-top: 2%;
+}
+
+.text-alert{
+    font-weight: bold;
+    font-size: 15pt;
+    color: #ff0000;
+}
+
+#info_revenda{
+    display: none;
+}
+
+#footer{
+    width: 230px;
+    padding: 8px;
+    background-color: #024a80;
+    /* background-color: #1a2226; */
+    color: #ffffff;
+    position: fixed;
+    bottom:0;
+    z-index: 999;
+    font-size: 9pt;
+}
+
+#footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.itens_footer{
+    float: left;
+}
+
+.list_box{
+    width: 100%;
+    background-color: #dadada;
+    padding: 15px;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.condominio_gerenciados{
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+}
+
+@media screen and (max-width: 960px) {
+    #form_login{
+        width: 95%;
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    #contents{
+        width: 100%;
+    }
+
+    .painel_novo_user{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .painel_primeiro_acesso{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .display_none_table{
+        display: none;
+    }
+
+    .btn{
+        padding: 15px;
+    }
+
+    .dashboards_box{
+        width: 80%;
+        margin-left:8.5%;
+    }
+
+    #footer{
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #form_login_top_esq{
+        display: none;   
+    }
+
+    #form_login_top_dir{
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .primeiro_acesso a{
+        margin-left: 2%;
+    }
+
+    .esqueceu_senha a{
+        margin-right: 2%;
+    }
+
+    .login-page{
+        padding: 2.5% 0 0 0;
+    }
+
+    #btn_primeiro_acesso_img img{
+        width: 50%;
+        height: 50%;
+    }
+}
